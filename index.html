@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wash Pros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-add.css">
+
+    <style>
+        .sticky-header-container {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: white;
+        }
+
+        .sticky-header-container .navbar {
+            margin-bottom: 0;
+        }
+
+        /* Add some padding to body to account for sticky header */
+        body {
+            padding-top: 0;
+        }
+
+        /* Demo content to show sticky effect */
+        .demo-content {
+            height: 200vh;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            padding: 50px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Header (Not Sticky) -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        <a href="tel:+1(234) 567-8910">Request a FREE Inspection today!</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Container for Main Header + Navigation -->
+    <div class="sticky-header-container">
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="images/logo.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-sm-5 pt-3">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <a href="mailto:washprosphx@gmail.com">washprosphx@gmail.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-5 pt-3">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <a href="tel:+1(833) 630-WASH">+1(234) 567-8910</a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg nav-header navbar-dark ftco_navbar bg-dark" id="ftco-navbar">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" role="button">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" role="button">Services</a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="/memberships">Packages</a>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service-areas">Service Areas</a>
+                        </li>
+
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contact-us.html" role="button" data-bs-toggle="dropdown">
+                                Contact Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="booking.html">Schedule Service</a></li>
+                                <li><a class="dropdown-item" href="request-quote.html">Request Quote</a></li>
+                            </ul>
+                        </li> -->
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="request-quote.html">
+                                Request a Quote
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- <div class="book-online">
+                        <a href="booking.html">Book Online</a>
+                    </div> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Handle sticky header scroll effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const stickyContainer = document.querySelector('.sticky-header-container');
+            let lastScrollTop = 0;
+
+            function handleScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                if (scrollTop > 100) {
+                    stickyContainer.classList.add('scrolled');
+                } else {
+                    stickyContainer.classList.remove('scrolled');
+                }
+
+                lastScrollTop = scrollTop;
+            }
+
+            window.addEventListener('scroll', handleScroll);
+
+            // Handle submenu dropdowns on hover for desktop
+            const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+
+            dropdownSubmenus.forEach(function (submenu) {
+                submenu.addEventListener('mouseenter', function () {
+                    if (window.innerWidth > 991) {
+                        const submenuDropdown = this.querySelector('.dropdown-menu');
+                        if (submenuDropdown) {
+                            submenuDropdown.style.display = 'block';
+                        }
+                    }
+                });
+
+                submenu.addEventListener('mouseleave', function () {
+                    if (window.innerWidth > 991) {
+                        const submenuDropdown = this.querySelector('.dropdown-menu');
+                        if (submenuDropdown) {
+                            submenuDropdown.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .form-header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .form-body {
+            padding: 2rem;
+        }
+
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        }
+
+        .section-title {
+            color: #495057;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #667eea;
+        }
+
+        .submit-btn {
+            background: #0d2b54;
+    border: 1px solid #207dff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+        }
+        
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading-spinner {
+            display: none;
+        }
+
+        .submit-btn:disabled .submit-text {
+            display: none;
+        }
+
+        .submit-btn:disabled .loading-spinner {
+            display: inline;
+        }
+    </style>
+
+
+
+    <div id="hero" class="hero-wrap" style="background-image: url('images/bg_3.jpeg');"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row g-5 slider-text align-items-center justify-content-end" data-scrollax-parent="true">
+                <div class="col-md-7 ftco-animate">
+                    <h1 class="mb-2">Professional<br><span>Exterior Cleaning</span> Services</h1>
+                    <p class="mb-4">Curb appeal starts here. From roof to sidewalk, we handle it all—residential and
+                        commercial pressure washing, soft washing, and window cleaning that restores beauty and prevents
+                        damage.</p>
+                    <a href="#" class="btn btn-secondary mr-md-4 py-3 px-4">Schedule Now <span
+                            class="ion-ios-arrow-forward"></span></a>
+                </div>
+                <div class="col-md-4 offset-md-1 ftco-animate">
+                    <form id="inspectForm" class="appointment">
+                        <h2 class="mb-3">Request a FREE<br>Property Inspection</h2>
+
+                        <div id="alertContainer"></div>
+
+                        <div class="row">
+                            <!-- Full Name Field -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="fa fa-user"></span></div>
+                                        <input type="text" name="fullName" class="form-control" placeholder="Full Name"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="fa fa-envelope"></span></div>
+                                        <input type="email" name="email" class="form-control"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="fa fa-phone"></span></div>
+                                        <input type="tel" name="phone" class="form-control" placeholder="Phone Number"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address Field -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <div class="input-wrap">
+                                        <div class="icon"><span class="fa fa-map-location-dot"></span></div>
+                                        <input type="text" name="address" class="form-control" placeholder="Address"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Service Selection -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <div class="form-field">
+                                        <div class="select-wrap">
+                                            <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                            <select name="service" class="form-control" required>
+                                                <option value="">Select services</option>
+                                                <option value="House Washing">House Washing</option>
+                                                <option value="Roof Cleaning">Roof Cleaning</option>
+                                                <option value="Driveway Cleaning">Driveway Cleaning</option>
+                                                <option value="Gutter Cleaning">Gutter Cleaning</option>
+                                                <option value="Patio Cleaning">Patio Cleaning</option>
+                                                <option value="Building Cleaning">Building Cleaning</option>
+                                                <option value="Concrete Cleaning">Concrete Cleaning</option>
+                                                <option value="Sidewalk Cleaning">Sidewalk Cleaning</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <textarea name="message" cols="30" rows="4" class="form-control"
+                                        placeholder="Message"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-md-12">
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span class="submit-text">
+                                        <i class="fas fa-paper-plane me-2"></i>SUBMIT NOW
+                                    </span>
+                                    <span class="loading-spinner" style="display: none;">
+                                        <i class="fas fa-spinner fa-spin me-2"></i>Submitting...
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Replace this URL with your actual Apps Script web app URL
+        const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx8tisnIVMxJwYom1KP_f0hsUfb0udthuglj13ycjE6W1owLCbplbJpF-Ubxkd7StBE2Q/exec';
+
+        document.getElementById('inspectForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = submitBtn.querySelector('.submit-text');
+            const loadingSpinner = submitBtn.querySelector('.loading-spinner');
+            const alertContainer = document.getElementById('alertContainer');
+
+            // Show loading state
+            submitText.style.display = 'none';
+            loadingSpinner.style.display = 'inline';
+            submitBtn.disabled = true;
+
+            // Clear previous alerts
+            alertContainer.innerHTML = '';
+
+            // Collect form data
+            const formData = new FormData(this);
+
+            // Convert FormData to URLSearchParams for proper submission
+            const params = new URLSearchParams();
+            for (let [key, value] of formData.entries()) {
+                params.append(key, value);
+            }
+
+            // Submit to Apps Script
+            fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: params.toString()
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+
+                    if (data.result === 'success') {
+                        // Show success message
+                        alertContainer.innerHTML = `
+                        <div class="alert alert-success" role="alert">
+                            <i class="fas fa-check-circle me-2"></i>
+                            Thank you! Your property inspection request has been submitted successfully.
+                        </div>
+                    `;
+
+                        // Reset form
+                        document.getElementById('inspectForm').reset();
+                    } else {
+                        throw new Error(data.message || 'Submission failed');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alertContainer.innerHTML = `
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Sorry, there was an error submitting your request. Please try again.
+                    </div>
+                `;
+                })
+                .finally(() => {
+                    // Reset button state
+                    submitText.style.display = 'inline';
+                    loadingSpinner.style.display = 'none';
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="about" class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-12 pl-md-5 py-md-5">
+                    <div class="heading-section pt-md-5">
+                        <h2 class="mb-5">Why Choose Us?</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 services-2 w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-award fa-2x text-primary me-3"></i></div>
+                            <div class="text pl-3">
+                                <h4>20 Years of Service</h4>
+                                <p>Trusted by homeowners and businesses for over two decades.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 services-2 w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-users fa-2x text-primary me-3"></i></div>
+                            <div class="text pl-3">
+                                <h4>Professional &amp; Experienced Staff</h4>
+                                <p>Trained technicians who get the job done right—every time.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 services-2 w-100 d-flex">
+                            <div class="icon d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-check-circle fa-2x text-primary me-3"></i></div>
+                            <div class="text pl-3">
+                                <h4>High Quality &amp; Reliable Service</h4>
+                                <p>We show up on time and deliver spotless results you can count on.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section class="ftco-counter cta-section" id="section-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mb-5 mb-md-0 text-center text-md-left">
+                    <h2 class="font-weight-bold" style="color: #fff; font-size: 20px;">Professional Pressure Washing
+                    </h2>
+                    <span>Get a no-cost, no-pressure exterior cleaning inspection. We'll assess your property and
+                        recommend only what you actually need—no upsells, just honest service.</span>
+                </div>
+                <div
+                    class="col-md-4 mb-5 mb-md-0 text-center text-md-left d-flex align-items-center justify-content-center">
+                    <a href="#" class="btn btn-white btn-outline-white align-self-center">Book Online Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="services" class="ftco-section ftco-intro" style="background-image: url(images/bg_2.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+                    <h2>Exterior Cleaning Services</h2>
+                    <p>Comprehensive exterior cleaning solutions that enhance your home or business’s appearance,
+                        protect your investment, and deliver lasting results —expertly handled for residential and
+                        commercial properties.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-joist"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Roof Washing</h3>
+                            <p>Gently remove moss, algae, and stains to extend your roof’s life.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-pipe"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Gutter Cleaning</h3>
+                            <p>Clear debris and flush downspouts to prevent water damage.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-rajpath"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">House Washing</h3>
+                            <p>Safely clean siding, stucco, and brick without harming surfaces.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-wall"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Concrete Cleaning</h3>
+                            <p>Erase oil stains and grime with powerful surface cleaning.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-kitchen"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Patio Cleaning</h3>
+                            <p>Revive outdoor spaces—wood, pavers, or concrete.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-road"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Driveway Washing</h3>
+                            <p>Remove stains, dirt, and tire marks for a spotless, like-new driveway.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-rajpath"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Sidewalk Cleaning</h3>
+                            <p>Eliminate buildup and grime to keep walkways clean and safe.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="d-block services">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="flaticon-cleaning"></span>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="heading">Window Cleaning</h3>
+                            <p>Streak-free windows, inside and out.</p>
+                            <a href="#" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-chevron-right"></span><i class="sr-only">Read more</i></a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <section id="service-areas" class="service-areas faq-section">
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-6">
+
+                    <div class="faq-title">
+                        <h2>Service Areas</h2>
+                        <p>Find answers to the most common questions about our services and policies.</p>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>Anthem</li>
+                            <li>Fountain Hills</li>
+                            <li>Paradise Valley</li>
+                            <li>North Phoenix</li>
+                            <li>North Scottsdale</li>
+                            <li>Central Scottsdale</li>
+                            <li>South Scottsdale</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="map"><iframe src="https://www.google.com/maps?q=Phoenix,AZ&amp;output=embed"
+                            width="100%" height="450" loading="lazy" title="Wash Pros Service Areas"></iframe></div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="ftco-counter cta-section" id="section-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mb-5 mb-md-0 text-center text-md-left align-items-center justify-content-center">
+                    <h2 class="font-weight-bold" style="color: #fff; font-size: 20px;">Request a FREE inspection</h2>
+                    <span>Get a no-cost, no-pressure exterior cleaning inspection. We'll assess your property and
+                        recommend only what you actually need—no upsells, just honest service.</span>
+                </div>
+                <div
+                    class="col-md-4 mb-5 mb-md-0 text-center text-md-left d-flex align-items-center justify-content-center">
+                    <a href="#hero" class="btn btn-white btn-outline-white align-self-center">Book Free Inspection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="testimonials" class="testimonials section light-background py-5">
+
+        <!-- Section Title -->
+        <div class="container heading-section text-center pt-5 aos-init aos-animate" data-aos="fade-up">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="no-bar p-0">Happy Customers</h2>
+                    <p>
+                        Here's what some of our customers have to say about our services
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End Section Title -->
+
+
+
+
+        <div class="container py-5">
+            <div class="row g-5 mb-5">
+
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-item">
+                        <div class="info">
+                            <h3>Sandra M.</h3>
+                            <h4>North Scottsdale, AZ</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>After a long summer, our house was covered in desert dust and hard water stains. These
+                                guys pressure washed everything—walls, driveway, patio—and it looks freshly built. Super
+                                friendly crew, too.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-item">
+                        <div class="info">
+                            <h3>Carlos H.</h3>
+                            <h4>Scottsdale, AZ</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>You get used to sand and dirt sticking to everything. I was shocked at how clean they
+                                got my roof and stucco. Definitely worth it before monsoon season hits.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-item">
+                        <div class="info">
+                            <h3>Nina W.</h3>
+                            <h4>Fountain Hills, AZ</h4>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p>
+                            <i class="bi bi-quote quote-icon-left"></i>
+                            <span>We had calcium stains from irrigation, bird droppings, you name it. The team
+                                soft-washed our windows and power washed the pool deck—spotless results. Already booked
+                                them again for spring.</span>
+                            <i class="bi bi-quote quote-icon-right"></i>
+                        </p>
+                    </div>
+                </div>
+                <!-- End testimonial item -->
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section class="ftco-counter cta-section" id="section-counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mb-5 mb-md-0 text-center text-md-left">
+                    <h2 class="font-weight-bold" style="color: #fff; font-size: 20px;">Streak-free Window Cleaning</h2>
+                    <span>Get a no-cost, no-pressure window cleaning estimate. We'll assess your property and recommend
+                        the best clean for your home.</span>
+                </div>
+                <div
+                    class="col-md-4 mb-5 mb-md-0 text-center text-md-left d-flex align-items-center justify-content-center">
+                    <a href="#" class="btn btn-white btn-outline-white align-self-center">Book Online Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id="faqs" class="faq-section">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="faq-title">
+                        <h2>Frequently Asked Questions</h2>
+                        <p>Find answers to the most common questions about our services and policies. <br><br><strong
+                                class="d-block mb-2">Still have questions?</strong>Contact our support team at:<br><a
+                                href="mailto:washprosphx@gmail.com">washprosphx@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="faq-accordion">
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ Item 1 -->
+                            <div class="card">
+                                <div class="card-header" id="faq1">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse"
+                                        data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        What types of surfaces can you clean?
+                                    </button>
+                                </div>
+                                <div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                            We clean a wide variety of surfaces including concrete, brick, vinyl siding,
+                                            stucco, wood, composite decking, fences, patios, driveways, roofs, and
+                                            gutters. Each surface is cleaned with the appropriate method to ensure
+                                            safety and effectiveness.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div class="card">
+                                <div class="card-header" id="faq2">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse"
+                                        data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                        What’s the difference between pressure washing and soft washing?
+                                    </button>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                            Pressure washing uses high-pressure water to remove dirt, grime, and stains
+                                            from hard surfaces like concrete. Soft washing uses low pressure and
+                                            specialized solutions to safely clean delicate surfaces like roofs, siding,
+                                            and painted wood without causing damage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div class="card">
+                                <div class="card-header" id="faq3">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse"
+                                        data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        Is your cleaning process safe for plants and pets?
+                                    </button>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="faq3" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                            Yes. We use eco-friendly, biodegradable cleaning solutions and take
+                                            precautions to protect your landscaping and pets. We pre-wet vegetation and
+                                            rinse thoroughly after treatment to minimize any risk.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 4 -->
+                            <div class="card">
+                                <div class="card-header" id="faq4">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse"
+                                        data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                        How often should I get my home or business exterior cleaned?
+                                    </button>
+                                </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                            Most homes and commercial buildings benefit from exterior cleaning once per
+                                            year. However, this can vary based on your location, weather conditions, and
+                                            surrounding environment (trees, traffic, etc.).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 5 -->
+                            <div class="card">
+                                <div class="card-header" id="faq5">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse"
+                                        data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        Do you offer free estimates?
+                                    </button>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="faq5" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                            Absolutely. We provide free, no-obligation estimates based on the size and
+                                            condition of the areas you'd like cleaned. You can request a quote by
+                                            filling out our form or calling us directly.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 6 
+                            <div class="card">
+                                <div class="card-header" id="faq6">
+                                    <button class="btn btn-faq" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                        Are you licensed and insured?
+                                    </button>
+                                </div>
+                                <div id="collapse6" class="collapse" aria-labelledby="faq6" data-parent="#faqAccordion">
+                                    <div class="card-body">
+                                        <p class="faq-answer">
+                                        Yes. We are fully licensed and insured for residential and commercial exterior cleaning. This ensures peace of mind for our clients and protects your property during the job.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="logo mb-4">
+                        <a href="/">
+                            <img src="images/logo-w.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="p-0">Curb appeal starts here. From roof to sidewalk, we handle it all.</p>
+                    <!-- <ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul> -->
+                </div>
+                <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Latest News</h2>
+						<div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#">Jun 14, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#">19</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#">Jun 14, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#">19</a></div>
+                </div>
+              </div>
+            </div>
+					</div> -->
+                <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Contact Us</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="d-block">Wash Pros LLC</a></li>
+
+                        <!-- <li><a href="tel:1234567890" class="d-block"><i
+                                    class="fas fa-phone-alt p-i-rot me-2 text-primary mr-1"></i> 123.456.7890</a></li> -->
+
+                        <li><a href="mailto:washprosphx@gmail.com" class="d-block"><i
+                                    class="fas fa-envelope me-2 text-primary mr-1"></i> washprosphx@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Office Hours</h2>
+                    <ul class="list-unstyled text-light-1">
+                        <li>Mon - Fri: 7am - 5pm</li>
+                        <li>Sat - Sun: Closed</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Schedule Online</h2>
+                    <div class="block-23 mb-3">
+                        <p>Book your next cleaning online. Sign up for a ProWash Package today!</p>
+
+                        <a href="booking.html" class="footer-btn">
+                            <span class="text">Book Now</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+
+                    <p class="copyright">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Wash Pros LLC. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

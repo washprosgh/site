@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Wash Pros</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-add.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Sticky Container for Main Header + Navigation -->
+    <div class="sticky-header-container">
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="logo">
+                            <a href="index-v5.html">
+                                <img src="images/logo.png" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <div class="row align-items-center justify-content-end">
+                                <div class="col-sm-5 pt-3">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <a href="mailto:info@washpatrol.com">info@example.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 pt-3">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <a href="tel:+1(833) 630-WASH">+1(234) 567-8910</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Handle sticky header scroll effect
+        document.addEventListener('DOMContentLoaded', function () {
+            const stickyContainer = document.querySelector('.sticky-header-container');
+            let lastScrollTop = 0;
+            
+            function handleScroll() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    stickyContainer.classList.add('scrolled');
+                } else {
+                    stickyContainer.classList.remove('scrolled');
+                }
+                
+                lastScrollTop = scrollTop;
+            }
+            
+            window.addEventListener('scroll', handleScroll);
+            
+            // Handle submenu dropdowns on hover for desktop
+            const dropdownSubmenus = document.querySelectorAll('.dropdown-submenu');
+
+            dropdownSubmenus.forEach(function (submenu) {
+                submenu.addEventListener('mouseenter', function () {
+                    if (window.innerWidth > 991) {
+                        const submenuDropdown = this.querySelector('.dropdown-menu');
+                        if (submenuDropdown) {
+                            submenuDropdown.style.display = 'block';
+                        }
+                    }
+                });
+
+                submenu.addEventListener('mouseleave', function () {
+                    if (window.innerWidth > 991) {
+                        const submenuDropdown = this.querySelector('.dropdown-menu');
+                        if (submenuDropdown) {
+                            submenuDropdown.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+        .package-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .package-header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .package-header h4 {
+            margin: 0 0 10px 0;
+            font-weight: 600;
+        }
+        
+        .package-price {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .package-price small {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+        
+        .package-features {
+            padding: 30px;
+        }
+        
+        .package-features ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+        
+        .package-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .package-features i {
+            color: #28a745;
+            margin-right: 10px;
+        }
+        
+        .btn-package {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-package:hover {
+            background: linear-gradient(135deg, #20c997, #28a745);
+            color: white;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            color: inherit;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .service-icon {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .service-icon i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .service-content {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .step-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        
+        .nav-tabs .nav-link {
+            border: none;
+            padding: 15px 30px;
+            font-weight: 600;
+            color: #6c757d;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .nav-tabs .nav-link.active {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+        }
+        
+        .services-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .addon-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .addon-item:hover {
+            border-color: #007bff;
+            background-color: #f8f9ff;
+        }
+
+        .addon-item input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .addon-price {
+            font-weight: bold;
+            color: #28a745;
+        }
+
+        .cost-summary {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .cost-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .cost-row.total {
+            border-top: 2px solid #007bff;
+            padding-top: 10px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Navigation Tabs -->
+                    <ul class="nav nav-tabs justify-content-center" id="servicesTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="packages-tab" data-toggle="tab" href="#packages" role="tab">
+                                <i class="fas fa-box mr-2"></i>Packages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="pick-choose-tab" data-toggle="tab" href="#pick-choose" role="tab">
+                                <i class="fas fa-hand-pointer mr-2"></i>Pick & Choose
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="servicesTabsContent">
+                        <!-- Packages Tab -->
+                        <div class="tab-pane fade show active" id="packages" role="tabpanel">
+                            <div class="row justify-content-center text-center mb-4">
+                                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+                                    <div class="step-circle mr-3">1</div>
+                                    <h5 class="mb-0">Select Package</h5>
+                                </div>
+
+                                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+                                    <div class="step-circle mr-3">2</div>
+                                    <h5 class="mb-0">Schedule Cleaning</h5>
+                                </div>
+
+                                <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+                                    <div class="step-circle mr-3">3</div>
+                                    <h5 class="mb-0">Checkout</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Basic Package -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card package-card">
+                                        <div class="package-header">
+                                            <h4>Basic Package</h4>
+                                            <div class="package-price">$299<small>/month</small></div>
+                                        </div>
+                                        <div class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Website Design</li>
+                                                <li><i class="fas fa-check"></i> Basic SEO</li>
+                                                <li><i class="fas fa-check"></i> Social Media Setup</li>
+                                                <li><i class="fas fa-check"></i> Monthly Analytics</li>
+                                                <li><i class="fas fa-check"></i> Email Support</li>
+                                            </ul>
+                                            <button class="btn btn-package" onclick="openPackageModal('Basic Package', 299)">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Professional Package -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card package-card">
+                                        <div class="package-header" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                                            <h4>Professional Package</h4>
+                                            <div class="package-price">$599<small>/month</small></div>
+                                        </div>
+                                        <div class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Everything in Basic</li>
+                                                <li><i class="fas fa-check"></i> Advanced SEO</li>
+                                                <li><i class="fas fa-check"></i> Content Marketing</li>
+                                                <li><i class="fas fa-check"></i> PPC Management</li>
+                                                <li><i class="fas fa-check"></i> Weekly Reports</li>
+                                                <li><i class="fas fa-check"></i> Phone Support</li>
+                                            </ul>
+                                            <button class="btn btn-package" onclick="openPackageModal('Professional Package', 599)">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Enterprise Package -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card package-card">
+                                        <div class="package-header" style="background: linear-gradient(135deg, #dc3545, #c82333);">
+                                            <h4>Enterprise Package</h4>
+                                            <div class="package-price">$999<small>/month</small></div>
+                                        </div>
+                                        <div class="package-features">
+                                            <ul>
+                                                <li><i class="fas fa-check"></i> Everything in Professional</li>
+                                                <li><i class="fas fa-check"></i> Custom Development</li>
+                                                <li><i class="fas fa-check"></i> Brand Strategy</li>
+                                                <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                                <li><i class="fas fa-check"></i> Dedicated Manager</li>
+                                                <li><i class="fas fa-check"></i> Daily Monitoring</li>
+                                            </ul>
+                                            <button class="btn btn-package" onclick="openPackageModal('Enterprise Package', 999)">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                        <!-- Pick & Choose Tab -->
+<div class="tab-pane fade" id="pick-choose" role="tabpanel">
+    <div class="row justify-content-center text-center mb-4">
+        <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+            <div class="step-circle mr-3">1</div>
+            <h5 class="mb-0">Select Services</h5>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+            <div class="step-circle mr-3">2</div>
+            <h5 class="mb-0">Schedule Cleaning</h5>
+        </div>
+
+        <div class="col-md-4 d-flex align-items-center justify-content-center mb-3">
+            <div class="step-circle mr-3">3</div>
+            <h5 class="mb-0">Checkout</h5>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Driveway Cleaning Service -->
+        <div class="col-lg-4 col-md-6">
+            <a href="/services/driveway-cleaning" class="service-card card text-decoration-none">
+                <div class="service-icon" style="background: linear-gradient(135deg, #007bff, #0056b3);">
+                    <i class="fas fa-broom"></i>
+                    <h5 class="mt-3 mb-0">Driveway Cleaning</h5>
+                </div>
+                <div class="service-content">
+                    <p>Remove dirt, oil, and grime from your driveway with professional pressure washing.</p>
+                    <p class="font-weight-bold">Price: $100 - $250</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- House Washing Service -->
+        <div class="col-lg-4 col-md-6">
+            <a href="/services/house-washing" class="service-card card text-decoration-none">
+                <div class="service-icon" style="background: linear-gradient(135deg, #28a745, #20c997);">
+                    <i class="fas fa-home"></i>
+                    <h5 class="mt-3 mb-0">House Washing</h5>
+                </div>
+                <div class="service-content">
+                    <p>Refresh your home’s exterior with safe, effective soft washing techniques.</p>
+                    <p class="font-weight-bold">Price: $200 - $500</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Window Cleaning Service -->
+        <div class="col-lg-4 col-md-6">
+            <a href="/services/window-cleaning" class="service-card card text-decoration-none">
+                <div class="service-icon" style="background: linear-gradient(135deg, #17a2b8, #138496);">
+                    <i class="fas fa-window-maximize"></i>
+                    <h5 class="mt-3 mb-0">Window Cleaning</h5>
+                </div>
+                <div class="service-content">
+                    <p>Crystal-clear windows, inside and out, for a spotless shine.</p>
+                    <p class="font-weight-bold">Price: $80 - $200</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Pool Deck Cleaning Service -->
+        <div class="col-lg-4 col-md-6">
+            <a href="/services/pool-deck-cleaning" class="service-card card text-decoration-none">
+                <div class="service-icon" style="background: linear-gradient(135deg, #ffc107, #e0a800);">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h5 class="mt-3 mb-0">Pool Deck Cleaning</h5>
+                </div>
+                <div class="service-content">
+                    <p>Restore your pool deck’s appearance with thorough cleaning and stain removal.</p>
+                    <p class="font-weight-bold">Price: $150 - $300</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Patio Cleaning Service -->
+        <div class="col-lg-4 col-md-6">
+            <a href="/services/patio-cleaning" class="service-card card text-decoration-none">
+                <div class="service-icon" style="background: linear-gradient(135deg, #6f42c1, #59359a);">
+                    <i class="fas fa-chair"></i>
+                    <h5 class="mt-3 mb-0">Patio Cleaning</h5>
+                </div>
+                <div class="service-content">
+                    <p>Revive your patio with expert cleaning for a pristine outdoor space.</p>
+                    <p class="font-weight-bold">Price: $120 - $250</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Package Booking Modal -->
+    <div class="modal fade" id="packageModal" tabindex="-1" role="dialog" aria-labelledby="packageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="packageModalLabel">Book Your Package</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="packageBookingForm">
+                        <!-- Package Selection -->
+                        <div class="form-group">
+                            <label for="packageSelect"><strong>Package</strong></label>
+                            <select class="form-control" id="packageSelect" name="package" required>
+                                <option value="">Select Package</option>
+                                <option value="Ultimate">Ultimate</option>
+                                <option value="Supreme">Supreme</option>
+                                <option value="Deluxe">Deluxe</option>
+                            </select>
+                        </div>
+
+                        <!-- Zip Code -->
+                        <div class="form-group">
+                            <label for="zipCode"><strong>Enter Zip Code</strong></label>
+                            <input type="text" class="form-control" id="zipCode" name="zipCode" required>
+                        </div>
+
+                        <!-- Square Feet -->
+                        <div class="form-group">
+                            <label for="squareFeet"><strong>How Many Square Feet Is Your Home?</strong></label>
+                            <input type="number" class="form-control" id="squareFeet" name="squareFeet" required>
+                        </div>
+
+                        <!-- Frequency -->
+                        <div class="form-group">
+                            <label for="frequency"><strong>Frequency of Service (Discount Will Apply in Cart)</strong></label>
+                            <select class="form-control" id="frequency" name="frequency" required onchange="calculateTotal()">
+                                <option value="">Select A Frequency</option>
+                                <option value="One Time" data-discount="0">One Time</option>
+                                <option value="Annual" data-discount="0.20">Annual</option>
+                                <option value="Semi-Annual" data-discount="0.15">Semi-Annual</option>
+                                <option value="Quarterly" data-discount="0.10">Quarterly</option>
+                                <option value="Bi-Monthly" data-discount="0.05">Bi-Monthly</option>
+                            </select>
+                        </div>
+
+                        <!-- Schedule Date -->
+                        <div class="form-group">
+                            <label for="scheduleDate"><strong>Requested Schedule Date</strong></label>
+                            <input type="date" class="form-control" id="scheduleDate" name="scheduleDate" required>
+                        </div>
+
+                        <!-- Time Frame -->
+                        <div class="form-group">
+                            <label><strong>Requested Time Frame</strong></label>
+                            <div class="form-check-inline">
+                                <input class="form-check-input" type="radio" name="timeFrame" id="earlyMorning" value="Early Morning">
+                                <label class="form-check-label mr-3" for="earlyMorning">Early Morning</label>
+                                
+                                <input class="form-check-input" type="radio" name="timeFrame" id="midMorning" value="Mid Morning">
+                                <label class="form-check-label mr-3" for="midMorning">Mid Morning</label>
+                                
+                                <input class="form-check-input" type="radio" name="timeFrame" id="afternoon" value="Afternoon">
+                                <label class="form-check-label mr-3" for="afternoon">Afternoon</label>
+                                
+                                <input class="form-check-input" type="radio" name="timeFrame" id="lateAfternoon" value="Late Afternoon">
+                                <label class="form-check-label mr-3" for="lateAfternoon">Late Afternoon</label>
+                                
+                                <input class="form-check-input" type="radio" name="timeFrame" id="evening" value="Evening">
+                                <label class="form-check-label" for="evening">Evening</label>
+                            </div>
+                        </div>
+
+                        <!-- Add Ons -->
+                        <div class="form-group">
+                            <label><strong>Add Ons</strong></label>
+                            <div id="addOns">
+                                <div class="addon-item">
+                                    <input type="checkbox" id="garageCleaning" name="addOns" value="Garage Cleaning" data-price="0" onchange="calculateTotal()">
+                                    <label for="garageCleaning">Garage Cleaning</label>
+                                </div>
+                                <div class="addon-item">
+                                    <input type="checkbox" id="screenCleaning" name="addOns" value="Screen Cleaning" data-price="0" onchange="calculateTotal()">
+                                    <label for="screenCleaning">Screen Cleaning</label>
+                                </div>
+                                <div class="addon-item">
+                                    <input type="checkbox" id="rustTreatment" name="addOns" value="Rust Treatment" data-price="125" onchange="calculateTotal()">
+                                    <label for="rustTreatment">Rust Treatment</label>
+                                    <span class="addon-price float-right">$125.00</span>
+                                </div>
+                                <div class="addon-item">
+                                    <input type="checkbox" id="stainTreatment" name="addOns" value="Stain Treatment" data-price="125" onchange="calculateTotal()">
+                                    <label for="stainTreatment">Stain Treatment</label>
+                                    <span class="addon-price float-right">$125.00</span>
+                                </div>
+                                <div class="addon-item">
+                                    <input type="checkbox" id="paintTreatment" name="addOns" value="Paint Treatment" data-price="200" onchange="calculateTotal()">
+                                    <label for="paintTreatment">Paint Treatment</label>
+                                    <span class="addon-price float-right">$200.00</span>
+                                </div>
+                                <div class="addon-item">
+                                    <input type="checkbox" id="patioFurniture" name="addOns" value="Patio Furniture" data-price="200" onchange="calculateTotal()">
+                                    <label for="patioFurniture">Patio Furniture</label>
+                                    <span class="addon-price float-right">$200.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cost Summary -->
+                        <div class="cost-summary">
+                            <div class="cost-row">
+                                <span>Product Cost:</span>
+                                <span id="productCost">$0.00</span>
+                            </div>
+                            <div class="cost-row">
+                                <span>Add On Total:</span>
+                                <span id="addOnTotal">$0.00</span>
+                            </div>
+                            <div class="cost-row">
+                                <span>Sub Total:</span>
+                                <span id="subTotal">$0.00</span>
+                            </div>
+                            <div class="cost-row">
+                                <span>Discount:</span>
+                                <span id="discount">$0.00</span>
+                            </div>
+                            <div class="cost-row total">
+                                <span>Grand Total:</span>
+                                <span id="grandTotal">$0.00</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="bookNow()">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        let selectedPackage = '';
+        let packagePrice = 0;
+
+        function openPackageModal(packageName, price) {
+            selectedPackage = packageName;
+            packagePrice = price;
+            
+            // Set the package in the dropdown (you can modify this logic)
+            const packageSelect = document.getElementById('packageSelect');
+            if (packageName.includes('Basic')) {
+                packageSelect.value = 'Ultimate';
+            } else if (packageName.includes('Professional')) {
+                packageSelect.value = 'Supreme';
+            } else if (packageName.includes('Enterprise')) {
+                packageSelect.value = 'Deluxe';
+            }
+            
+            // Update product cost
+            document.getElementById('productCost').textContent = '$' + price.toFixed(2);
+            calculateTotal();
+            
+            // Show modal
+            $('#packageModal').modal('show');
+        }
+
+        function calculateTotal() {
+            const productCost = packagePrice;
+            let addOnTotal = 0;
+            
+            // Calculate add-on total
+            const addOnCheckboxes = document.querySelectorAll('input[name="addOns"]:checked');
+            addOnCheckboxes.forEach(checkbox => {
+                addOnTotal += parseFloat(checkbox.dataset.price);
+            });
+            
+            const subTotal = productCost + addOnTotal;
+            
+            // Calculate discount based on frequency
+            const frequencySelect = document.getElementById('frequency');
+            const selectedOption = frequencySelect.options[frequencySelect.selectedIndex];
+            const discountRate = selectedOption ? parseFloat(selectedOption.dataset.discount || 0) : 0;
+            const discountAmount = subTotal * discountRate;
+            
+            const grandTotal = subTotal - discountAmount;
+            
+            // Update display
+            document.getElementById('productCost').textContent = '$' + productCost.toFixed(2);
+            document.getElementById('addOnTotal').textContent = '$' + addOnTotal.toFixed(2);
+            document.getElementById('subTotal').textContent = '$' + subTotal.toFixed(2);
+            document.getElementById('discount').textContent = '$' + discountAmount.toFixed(2);
+            document.getElementById('grandTotal').textContent = '$' + grandTotal.toFixed(2);
+        }
+
+        function bookNow() {
+            // Validate form
+            const form = document.getElementById('packageBookingForm');
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            // Collect form data
+            const formData = new FormData(document.getElementById('packageBookingForm'));
+            
+            // Add selected add-ons
+            const selectedAddOns = [];
+            const addOnCheckboxes = document.querySelectorAll('input[name="addOns"]:checked');
+            addOnCheckboxes.forEach(checkbox => {
+                selectedAddOns.push(checkbox.value);
+            });
+            
+            // Prepare data for Google Apps Script
+            const bookingData = new FormData();
+            bookingData.append('package', formData.get('package'));
+            bookingData.append('zipCode', formData.get('zipCode'));
+            bookingData.append('squareFeet', formData.get('squareFeet'));
+            bookingData.append('frequency', formData.get('frequency'));
+            bookingData.append('scheduleDate', formData.get('scheduleDate'));
+            bookingData.append('timeFrame', formData.get('timeFrame'));
+            bookingData.append('addOns', selectedAddOns.join(', '));
+            bookingData.append('productCost', document.getElementById('productCost').textContent);
+            bookingData.append('addOnTotal', document.getElementById('addOnTotal').textContent);
+            bookingData.append('subTotal', document.getElementById('subTotal').textContent);
+            bookingData.append('discount', document.getElementById('discount').textContent);
+            bookingData.append('grandTotal', document.getElementById('grandTotal').textContent);
+            
+            // Show loading state
+            const bookButton = document.querySelector('[onclick="bookNow()"]');
+            const originalText = bookButton.textContent;
+            bookButton.textContent = 'Submitting...';
+            bookButton.disabled = true;
+            
+            // Send to Google Apps Script
+            // Replace 'YOUR_APPS_SCRIPT_URL' with your actual Apps Script web app URL
+            const APPS_SCRIPT_URL = 'YOUR_APPS_SCRIPT_URL_HERE';
+            
+            fetch(APPS_SCRIPT_URL, {
+                method: 'POST',
+                body: bookingData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    alert('🎉 ' + data.message);
+                    // Close modal
+                    $('#packageModal').modal('hide');
+                    // Reset form
+                    document.getElementById('packageBookingForm').reset();
+                    calculateTotal();
+                } else {
+                    throw new Error(data.message || 'Unknown error occurred');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('❌ There was an error submitting your booking. Please try again or contact us directly.');
+            })
+            .finally(() => {
+                // Restore button state
+                bookButton.textContent = originalText;
+                bookButton.disabled = false;
+            });
+        }
+
+        // Set minimum date to today
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('scheduleDate').setAttribute('min', today);
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+       const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzQ2rx31GwzChkTqCZCjxgpqmi734T3cXkCwaEArKwbCg86knDEya7MPvIhmaFl4Iez/exec';
+
+function showAlert(message, type = 'info') {
+    const alertContainer = document.getElementById('alertContainer') || document.createElement('div');
+    if (!alertContainer.id) {
+        alertContainer.id = 'alertContainer';
+        document.body.prepend(alertContainer);
+    }
+    const alert = document.createElement('div');
+    alert.className = `alert alert-${type} alert-dismissible fade show mt-3`;
+    alert.innerHTML = `
+        ${message}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+        </button>
+    `;
+    alertContainer.innerHTML = '';
+    alertContainer.appendChild(alert);
+}
+
+document.getElementById('packageBookingForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const submitBtn = document.querySelector('[onclick="bookNow()"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Submitting...';
+    submitBtn.disabled = true;
+
+    try {
+        const form = this;
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            throw new Error('Please fill out all required fields.');
+        }
+
+        const formData = new FormData(form);
+        
+        // Collect selected add-ons
+        const selectedAddOns = [];
+        const addOnCheckboxes = document.querySelectorAll('input[name="addOns"]:checked');
+        addOnCheckboxes.forEach(checkbox => {
+            selectedAddOns.push(checkbox.value);
+        });
+
+        // Prepare data with camelCase field names to match Google Apps Script
+        const data = new URLSearchParams();
+        data.append('package', formData.get('package'));
+        data.append('zipCode', formData.get('zipCode'));
+        data.append('squareFeet', formData.get('squareFeet'));
+        data.append('frequency', formData.get('frequency'));
+        data.append('scheduleDate', formData.get('scheduleDate'));
+        data.append('timeFrame', formData.get('timeFrame'));
+        data.append('addOns', selectedAddOns.join(', '));
+        data.append('productCost', document.getElementById('productCost').textContent);
+        data.append('addOnTotal', document.getElementById('addOnTotal').textContent);
+        data.append('subTotal', document.getElementById('subTotal').textContent);
+        data.append('discount', document.getElementById('discount').textContent);
+        data.append('grandTotal', document.getElementById('grandTotal').textContent);
+
+        console.log('Submitting data:', data.toString()); // Debugging
+
+        const response = await fetch(SCRIPT_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: data.toString()
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const responseText = await response.text();
+        console.log('Server response:', responseText); // Debugging
+        let result;
+        
+        try {
+            result = JSON.parse(responseText);
+        } catch (parseError) {
+            throw new Error('Invalid response from server: ' + responseText);
+        }
+
+        if (result.result === 'success') {
+            showAlert('<i class="fas fa-check-circle me-2"></i>Thank you! Your booking has been submitted successfully. We\'ll contact you soon!', 'success');
+            form.reset();
+            document.getElementById('productCost').textContent = '$0.00';
+            document.getElementById('addOnTotal').textContent = '$0.00';
+            document.getElementById('subTotal').textContent = '$0.00';
+            document.getElementById('discount').textContent = '$0.00';
+            document.getElementById('grandTotal').textContent = '$0.00';
+            $('#packageModal').modal('hide');
+        } else {
+            throw new Error(result.message || 'Unknown error from server');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        showAlert(`<i class="fas fa-exclamation-triangle me-2"></i>Error: ${error.message}`, 'danger');
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
+
+// Override bookNow to trigger form submission
+function bookNow() {
+    document.getElementById('packageBookingForm').dispatchEvent(new Event('submit'));
+}
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="logo mb-4">
+                        <a href="/">
+                            <img src="images/logo-w.png" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <p class="p-0">A small river named Duden flows by their place and supplies it with the necessary
+                        regelialia.</p>
+                    <!-- <ul class="ftco-footer-social p-0">
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+            </ul> -->
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0"></div>
+                <!-- <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+						<h2 class="footer-heading">Latest News</h2>
+						<div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#">Jun 14, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#">19</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+                <div class="meta">
+                  <div><a href="#">Jun 14, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#">19</a></div>
+                </div>
+              </div>
+            </div>
+					</div> -->
+                <div class="col-md-6 col-lg-3 pl-lg-5 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Quick Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="py-2 d-block">Home</a></li>
+                        <li><a href="#" class="py-2 d-block">About</a></li>
+                        <li><a href="#" class="py-2 d-block">Services</a></li>
+                        <li><a href="#" class="py-2 d-block">Works</a></li>
+                        <li><a href="#" class="py-2 d-block">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <h2 class="footer-heading">Have Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon fa fa-map"></span><span class="text">203 Fake St. Mountain View, San
+                                    Francisco, California, USA</span></li>
+                            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929
+                                        210</span></a></li>
+                            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span
+                                        class="text">info@yourdomain.com</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+
+                    <p class="copyright">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib.com</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

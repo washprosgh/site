@@ -230,7 +230,9 @@ get a quote */
 .p-i-rot {
         transform: rotate(90deg);
 }
-
+.footer .footer-heading:after {
+    bottom: -9px;
+}
 
 
 

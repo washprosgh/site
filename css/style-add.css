@@ -196,7 +196,9 @@ get a quote */
 
 
 
-
+#about .text-primary {
+        color: #0d2b54 !important;
+}
 
 
 
@@ -245,6 +247,9 @@ get a quote */
     content: '';
     opacity: .35;
     background: linear-gradient(to right, black, transparent);
+}
+.services {
+    background: #0d2b54;
 }
 
 
@@ -332,7 +337,7 @@ get a quote */
 
 
 .footer {
-    padding: 6em 0 3em 0;
+    padding: 4em 0 3em 0;
     background: #071932;
 }
 
@@ -357,7 +362,10 @@ get a quote */
     bottom: -9px;
 }
 
-
+.cpyrght {
+            background: #051121;
+    padding: 1.33em 0em;
+}
 
 
 
